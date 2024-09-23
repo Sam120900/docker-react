@@ -10,5 +10,15 @@ services:
     volumes:
       - /app/node_modules
       - .:/app #we want to map the current directory outside of the container to the app folder inside the container.
+  tests:
+    build: 
+      context: . 
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    command: ["npm", "run", "test"]
+  
+
 
     
