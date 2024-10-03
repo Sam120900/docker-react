@@ -6,4 +6,4 @@ before_install: #gets executed before we run the tests (or deployment)
   - docker build -t samindiw/docker-react -f Dockerfile.dev .
 
 script: #commands to actually do what we want it to do
-  - docker run samindi/docker-react npm run test -- --coverage
+  - docker run samindiw/docker-react npm run test -- --coverage
