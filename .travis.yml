@@ -16,6 +16,6 @@ deploy: #how to take our application and deplot it off to aws
   bucket_name: "elasticbeanstalk-us-west-1-875543557971"
   bucket_path: "Frontend-env"
   on:
-    branch: master
+    branch: main
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$AWS_SECRET_KEY"
