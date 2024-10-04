@@ -11,10 +11,10 @@ script: #commands to actually do what we want it to do
 deploy: #how to take our application and deplot it off to aws
   provider: elasticbeanstalk
   region: "us-west-1"
-  app: "Frontend-env"
+  app: "frontend"
   env: "Frontend-env"
   bucket_name: "elasticbeanstalk-us-west-1-875543557971"
-  bucket_path: "Frontend-env"
+  bucket_path: "frontend"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
