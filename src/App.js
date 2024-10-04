@@ -7,10 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hi there
-          hello there again
-          i was changed
-          test commit
+          changed in feature branch
         </p>
         <p> lowkey changed again </p>
         <a
